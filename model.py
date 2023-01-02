@@ -91,7 +91,7 @@ model = tf.keras.Sequential(
 #compile the model
 model.compile(
     loss = tf.keras.losses.mae,
-    optimizer = tf.keras.optimizer.SGD(),
+    optimizer = tf.keras.optimizers.SGD(),
     metrics = ['mae']
 )
 
