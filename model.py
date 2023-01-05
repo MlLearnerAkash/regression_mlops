@@ -82,7 +82,7 @@ tf.random.set_seed(42)
 #Craete the model
 model = tf.keras.Sequential(
     [
-        tf.keras.layers.Dense(1),
+        tf.keras.layers.Dense(1, input_shape=[1]),
         tf.keras.layers.Dense(1),
         tf.keras.layers.Dense(1)
     ]
@@ -98,7 +98,7 @@ model.compile(
 
 
 #Fit the model
-model.fit(X_train, y_train, epochs =100)
+model.fit(X_train, y_train, epochs =1000)
 
 
 #Make plot and predictions of the model
